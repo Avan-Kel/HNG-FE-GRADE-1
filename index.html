@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Home page header starts here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+  </head>
+  <!-- Home page header ends here -->
+
+  <!-- Home page body starts here -->
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="nav-logo">KC Portfolio</h1>
+        <ul class="nav-list">
+          <li><a href="index.html" data-testid="nav-profile">Profile</a></li>
+          <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+          <li><a href="about.html" data-testid="nav-about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Profile card root container starts here -->
+    <article data-testid="test-profile-card">
+      <figure>
+        <img
+          data-testid="test-user-avatar"
+          src="images/webavatar3.jpg"
+          alt="User Avatar"
+        />
+      </figure>
+
+      <!-- Profile card content here -->
+      <div class="profile-content">
+        <!-- Profile card header here -->
+        <header class="comp-border">
+          <h2 data-testid="test-user-name">Eguh Promise</h2>
+          <p data-testid="test-user-bio">
+            I am a Full Stack Developer blending creativity and code to build
+            next-gen web experiences. Skilled in crafting wonderful, responsive
+            and imaginative front-ends and powerful back-end systems that just
+            work and bring liveliness to the user experience.
+          </p>
+          <br/>
+          <span data-testid="test-user-time"></span>
+        </header>
+
+        <!-- Social likes navigation bar here -->
+        <h3>My Social Links</h3>
+        <nav data-testid="test-user-social-links" class="comp-border">
+          <ul>
+            <li>
+              <a
+                data-testid="test-user-social-twitter"
+                href="https://x.com/EguhPromis30435"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                data-testid="test-user-social-tiktok"
+                href="https://www.tiktok.com/@millenniagaming?_t=ZS-90cepQxGWrF&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tiktok</a
+              >
+            </li>
+            <li>
+              <a
+                data-testid="test-user-social-github"
+                href="https://github.com/Avan-Kel"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hobbies section here -->
+        <section class="comp-border">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>Swimming</li>
+            <li>Gaming</li>
+            <li>Reading</li>
+          </ul>
+        </section>
+
+        <!-- Dislikes section here -->
+        <section class="comp-border">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Hot weather</li>
+            <li>Laziness</li>
+            <li>Slow internet</li>
+            <li>Bad food</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+    <!-- Profile card root container ends here -->
+
+    <script src="script.js"></script>
+  </body>
+  <!-- Home page body ends here -->
+</html>
